@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    
+    <!-- Add a nice sans-serif font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- The CSS file contains some styling to make our web application look aesthetically pleasing -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header contains a form that we will be using to add tasks to our to-do list -->
+    <div id="myDIV" class="header">
+      <h2>My Tasks</h2>
+      <form id="addingTask">
+        <input type="text" name="newTask" placeholder="New Task" required />
+        <input type="submit" value="Add" class="addBtn" />
+      </form>
+    </div>
+
+    <!-- The unordered list renders the tasks found in the Firestore Database on the web page -->
+    <ul id="myUL"></ul>
+
+    <!-- The JavaScript file contains the code used to connect to the Firestore Database -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
